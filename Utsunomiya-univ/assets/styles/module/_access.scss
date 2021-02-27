@@ -1,0 +1,49 @@
+.access {
+  padding-top: 220px;
+
+  &_img {
+    text-align: center;
+  }
+
+  &_detail {
+    margin: 50px 10px;
+    h5 {
+      text-decoration: underline;
+      margin-top: 20px;
+    }
+  }
+
+  &_table {
+    td {
+      padding-right: 10px;
+    }
+  }
+
+  p {
+    margin: 10px;
+  }
+}
+
+@include mq($breakpoint: tab) {
+  .access {
+    &_img {
+      text-align: center;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@include mq($breakpoint: sp) {
+  .access {
+    &_img {
+      text-align: center;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+}

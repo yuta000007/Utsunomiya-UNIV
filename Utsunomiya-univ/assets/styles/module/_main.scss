@@ -1,0 +1,64 @@
+.objective {
+  justify-content: space-between;
+  padding-top: 220px;
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  &_left {
+    width: calc(50% - 30px);
+
+    p {
+      font-size: 0.8rem;
+      text-align: left;
+    }
+  }
+
+  &_text {
+    margin-top: 10px;
+    padding: 20px 20px;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  &_right {
+    width: calc(50% - 30px);
+
+    ul {
+      margin-top: 20px;
+      min-height: 410px;
+      padding: 10px;
+      border: 2px solid #000000;
+    }
+
+    li {
+      margin-bottom: 10px;
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@include mq($breakpoint: tab) {
+
+}
+
+@include mq($breakpoint: sp) {
+  .objective {
+    display: block;
+
+    &_left {
+      width: 100%;
+    }
+
+    &_right {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}

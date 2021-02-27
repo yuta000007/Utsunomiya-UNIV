@@ -1,0 +1,51 @@
+.brochure {
+  h3 {
+    padding: 10px;
+  }
+  &_img {
+    margin: 50px;
+    text-align: center;
+  }
+
+  &_pdf {
+    width: 50%;
+    padding: 10px 20px;
+
+    img {
+      margin-left: 100px;
+    }
+  }
+}
+
+@include mq($breakpoint: tab) {
+  .brochure {
+
+    &_pdf {
+      width: 80%;
+      margin: 0 auto;
+      padding: 10px 20px;
+
+      img {
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+@include mq($breakpoint: sp) {
+  .brochure {
+   
+    &_img {
+      margin: 20px;
+    }
+
+    &_pdf {
+      width: 100%;
+      padding: 10px 20px;
+
+      img {
+        margin-left: 0px;
+      }
+    }
+  }
+}

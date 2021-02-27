@@ -1,0 +1,40 @@
+.curriculum {
+  padding-top: 220px;
+  
+  &_wrapper {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  p {
+    margin: 25px 40px;
+  }
+
+  ul {
+    margin-left: 100px;
+  }
+
+  &_text {
+    padding: 0 50px;
+  }
+}
+
+@include mq($breakpoint: tab) {
+  .curriculum {
+    &_text {
+      padding: 0;
+    }
+  }
+}
+
+@include mq($breakpoint: sp) {
+  .curriculum {
+    ul {
+      margin-left: 20px;
+    }
+
+    &_text {
+      padding: 0;
+    }
+  }
+}

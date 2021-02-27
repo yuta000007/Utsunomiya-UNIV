@@ -1,0 +1,183 @@
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  font-size: 0.8rem;
+
+  h3 {
+    margin: 10px 0 0 60px;
+    padding: 10px;
+    display: inline-block;
+    border: 3px solid blue;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &_area {
+    padding: 5px 0;
+    margin: 0 auto;
+    justify-content: left;
+
+    img {
+      width: 60px;
+    }
+
+    &_name {
+      margin: auto 0 5px 50px;
+    }
+
+    &_lang {
+      margin: auto 0 5px auto;
+      height: 45px;
+
+      li {
+        border: 2px solid #192f60;
+        background-color: #5a79ba;
+        margin-right: 5px;
+        padding: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &_nav {
+    ul {
+      justify-content: center;
+    }
+
+    li {
+      width: 120px;
+      height: 55px;
+      border: 3px solid #949495;
+      background-color: #dddcd6;
+      text-align: center;
+      display: table;
+    }
+
+    li + li {
+      border-left: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  &_logo {
+    justify-content: space-between;
+    height: 150px;
+    padding: 10px 70px 10px 60px;
+    background-color: #eae5e3;
+    img {
+      width: 150px;
+    }
+
+    h2 {
+      width: 35%;
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.header-english {
+  &_list {
+    font-size: 0.5rem;
+  }
+
+  h2 {
+    width: 40%;
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+}
+
+@include mq($breakpoint: tab) {
+  .header {
+    &_area {
+      &_name {
+        font-size: 0.7rem;
+      }
+
+      &_lang {
+        height: 40px;
+        font-size: 0.6rem;
+      }
+    }
+    &_logo {
+      height: 250px;
+
+      img {
+        width: 200px;
+      }
+
+      h2 {
+        width: 45%;
+        margin-top: 30px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .header-english {
+    &_area {
+      &_name {
+        font-size: 0.6rem;
+      }
+    }
+
+    h2 {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@include mq($breakpoint: sp) {
+  .header {
+    &_area {
+      &_name {
+        margin: auto 0 5px 10px;
+        font-size: 0.6rem;
+      }
+
+      &_lang {
+        height: 35px;
+        font-size: 0.5rem;
+      }
+    }
+    &_logo {
+      height: 200px;
+
+      img {
+        width: 150px;
+      }
+
+      h2 {
+        width: 50%;
+        margin-top: 10px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .header-english {
+    &_area {
+      &_name {
+        font-size: 0.6rem;
+      }
+    }
+
+    h2 {
+      font-size: 0.8rem;
+    }
+  }
+}
