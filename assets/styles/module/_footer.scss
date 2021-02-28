@@ -126,6 +126,13 @@
 }
 @include mq($breakpoint: tab) {
   .footer {
+
+    .parallax{
+      height:160px;
+      background-size: 150%;
+      background-position:center top -0.773px;
+    }
+
     .banners {
       .banner {
         max-width: none;
@@ -133,6 +140,7 @@
         margin: 0;
       }
     }
+
     &_right {
       .copyright {
         text-align: left;
